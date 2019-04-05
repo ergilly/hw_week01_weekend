@@ -142,11 +142,11 @@ describe('pet shop', () => {
     myFunctions.addPetToStock(petShop, newPet);
     expect(myFunctions.getStockCount(petShop)).toBe(7);
   });
-/*
+
   test('can get a customers cash', () => {
     expect(myFunctions.getCustomersCash(customers[0])).toBe(1000);
   });
-
+/*
   test('can get total customers cash', () => {
     expect(myFunctions.getCustomersCashTotal(customers)).toBe(1050);
   });

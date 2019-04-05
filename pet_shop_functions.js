@@ -44,6 +44,9 @@ myFunctions = {
   },
   addPetToStock: (shopname, newPet) => {
     shopname.pets.push(newPet);
+  },
+  getCustomersCash: (customer) => {
+    return customer.cash;
   }
   // Write your functions here
 };
