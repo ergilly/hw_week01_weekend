@@ -79,11 +79,11 @@ describe('pet shop', () => {
   test('has name Camelot of Pets', () => {
     expect(myFunctions.getName(petShop)).toBe("Camelot of Pets");
   });
-/*
+
   test('has correct total cash', () => {
     expect(myFunctions.getTotalCash(petShop)).toBe(1000);
   });
-
+/*
   test('can add cash', () => {
     myFunctions.addOrRemoveCash(petShop, 10);
     expect(myFunctions.getTotalCash(petShop)).toBe(1010);
