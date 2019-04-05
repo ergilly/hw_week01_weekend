@@ -39,6 +39,7 @@ myFunctions = {
     for (var i = 0; i < shopname.pets.length; i++) {
       if (petName == shopname.pets[i].name) {
         shopname.pets.splice(i, 1);
+        i--;
       }
     }
   },
@@ -69,10 +70,16 @@ myFunctions = {
     return customer.cash >= newPet.price;
   },
   sellPetToCustomer: (shopname, pet, customer) => {
-    myFunctions.addPetToCustomer(customer, pet)
-    myFunctions.increasePetsSold(shopname, 1);
-    myFunctions.removeCustomerCash(customer, pet.price);
-    myFunctions.addOrRemoveCash(shopname, pet.price);
+    console.log("GET PET BY NAME", myFunctions.getPetByName(shopname, pet));
+    if (pet === undefined || (myFunctions.customerCanAffordPet(customer, pet) === false)) {
+      return;
+    } else {
+      myFunctions.addPetToCustomer(customer, pet);
+      myFunctions.increasePetsSold(shopname, 1);
+      myFunctions.removeCustomerCash(customer, pet.price);
+      myFunctions.addOrRemoveCash(shopname, pet.price);
+    }
+
   }
   // Write your functions here
 };

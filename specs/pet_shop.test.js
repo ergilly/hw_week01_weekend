@@ -188,7 +188,7 @@ describe('pet shop', () => {
     expect(myFunctions.getCustomersCash(customer)).toBe(100);
     expect(myFunctions.getTotalCash(petShop)).toBe(1900);
   });
-/*
+
   test('customer cant buy a pet that doesnt exist', () => {
     var customer = customers[0];
     var pet = myFunctions.getPetByName(petShop, "Dave");
@@ -202,7 +202,7 @@ describe('pet shop', () => {
 
   test('customer cant buy a pet if they cant afford it', () => {
     var customer = customers[1];
-    var pet = myFunctions.getPetByName(petShop, "Athur");
+    var pet = myFunctions.getPetByName(petShop, "Arthur");
     myFunctions.sellPetToCustomer(petShop, pet, customer);
 
     expect(myFunctions.getCustomerPetCount(customers[0])).toBe(0);
@@ -210,5 +210,5 @@ describe('pet shop', () => {
     expect(myFunctions.getCustomersCash(customer)).toBe(50);
     expect(myFunctions.getTotalCash(petShop)).toBe(1000);
   });
-*/
+
 })
