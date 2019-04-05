@@ -47,6 +47,13 @@ myFunctions = {
   },
   getCustomersCash: (customer) => {
     return customer.cash;
+  },
+  getCustomersCashTotal: (customers) => {
+    let totalCash = 0;
+    for (let customer of customers) {
+      totalCash += customer.cash;
+    }
+    return totalCash;
   }
   // Write your functions here
 };
