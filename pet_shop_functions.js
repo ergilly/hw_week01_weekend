@@ -60,6 +60,9 @@ myFunctions = {
   },
   getCustomerPetCount: (customer) => {
     return customer.pets.length;
+  },
+  addPetToCustomer: (customer, newPet) => {
+    customer.pets.push(newPet);
   }
   // Write your functions here
 };

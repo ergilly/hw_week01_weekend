@@ -159,12 +159,12 @@ describe('pet shop', () => {
   test('can get number of pets for a customer', () => {
     expect(myFunctions.getCustomerPetCount(customers[0])).toBe(0);
   });
-/*
+
   test('can add a pet to a customer', () => {
     myFunctions.addPetToCustomer(customers[0], newPet);
     expect(myFunctions.getCustomerPetCount(customers[0])).toBe(1);
   });
-
+/*
   // EXTENSIONS
 
   test('customer CANT afford a pet', () => {;
