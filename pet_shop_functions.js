@@ -41,6 +41,9 @@ myFunctions = {
         shopname.pets.splice(i, 1);
       }
     }
+  },
+  addPetToStock: (shopname, newPet) => {
+    shopname.pets.push(newPet);
   }
   // Write your functions here
 };

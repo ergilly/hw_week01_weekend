@@ -137,12 +137,12 @@ describe('pet shop', () => {
     myFunctions.removePetByName(petShop, "Arthur");
     expect(myFunctions.getPetByName(petShop, "Arthur")).toBeUndefined();
   });
-/*
+
   test('can add a new pet to stock', () => {
     myFunctions.addPetToStock(petShop, newPet);
     expect(myFunctions.getStockCount(petShop)).toBe(7);
   });
-
+/*
   test('can get a customers cash', () => {
     expect(myFunctions.getCustomersCash(customers[0])).toBe(1000);
   });
