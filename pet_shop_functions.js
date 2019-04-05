@@ -57,6 +57,9 @@ myFunctions = {
   },
   removeCustomerCash: (customer, cash) => {
     customer.cash -= cash;
+  },
+  getCustomerPetCount: (customer) => {
+    return customer.pets.length;
   }
   // Write your functions here
 };
