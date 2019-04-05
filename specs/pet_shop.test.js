@@ -88,12 +88,12 @@ describe('pet shop', () => {
     myFunctions.addOrRemoveCash(petShop, 10);
     expect(myFunctions.getTotalCash(petShop)).toBe(1010);
   });
-/*
+
   test('can remove cash', () => {
     myFunctions.addOrRemoveCash(petShop, -10);
     expect(myFunctions.getTotalCash(petShop)).toBe(990);
   });
-
+/*
   test('can get number of pets sold', () => {
     expect(myFunctions.getPetsSold(petShop)).toBe(0);
   });
