@@ -9,7 +9,10 @@ myFunctions = {
     shopname.admin.totalCash = shopname.admin.totalCash + cash;
   },
   getPetsSold: (shopname) => {
-    return shopname.admin.petsSold
+    return shopname.admin.petsSold;
+  },
+  increasePetsSold: (shopname, number) => {
+    shopname.admin.petsSold = shopname.admin.petsSold + number;
   }
   // Write your functions here
 };
