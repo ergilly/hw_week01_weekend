@@ -54,6 +54,9 @@ myFunctions = {
       totalCash += customer.cash;
     }
     return totalCash;
+  },
+  removeCustomerCash: (customer, cash) => {
+    customer.cash -= cash;
   }
   // Write your functions here
 };

@@ -150,12 +150,12 @@ describe('pet shop', () => {
   test('can get total customers cash', () => {
     expect(myFunctions.getCustomersCashTotal(customers)).toBe(1050);
   });
-/*
+
   test('can remove customers cash', () => {
     myFunctions.removeCustomerCash(customers[0], 100);
     expect(customers[0].cash).toBe(900);
   });
-
+/*
   test('can get number of pets for a customer', () => {
     expect(myFunctions.getCustomerPetCount(customers[0])).toBe(0);
   });
