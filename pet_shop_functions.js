@@ -34,6 +34,13 @@ myFunctions = {
         return pet;
       }
     }
+  },
+  removePetByName: (shopname, petName) => {
+    for (var i = 0; i < shopname.pets.length; i++) {
+      if (petName == shopname.pets[i].name) {
+        shopname.pets.splice(i, 1);
+      }
+    }
   }
   // Write your functions here
 };

@@ -130,14 +130,14 @@ describe('pet shop', () => {
   test('returns undefined if pet is not found by name', () => {
     expect(myFunctions.getPetByName(petShop, "Fred")).toBeUndefined();
   });
-/*
+
   test('can remove all pets called Arthur', () => {
     // HINT: You can loop round an array starting at the end
     // using for(var i = shop.pets.length-1; i >= 0; i--){}
     myFunctions.removePetByName(petShop, "Arthur");
     expect(myFunctions.getPetByName(petShop, "Arthur")).toBeUndefined();
   });
-
+/*
   test('can add a new pet to stock', () => {
     myFunctions.addPetToStock(petShop, newPet);
     expect(myFunctions.getStockCount(petShop)).toBe(7);
