@@ -83,12 +83,12 @@ describe('pet shop', () => {
   test('has correct total cash', () => {
     expect(myFunctions.getTotalCash(petShop)).toBe(1000);
   });
-/*
+
   test('can add cash', () => {
     myFunctions.addOrRemoveCash(petShop, 10);
     expect(myFunctions.getTotalCash(petShop)).toBe(1010);
   });
-
+/*
   test('can remove cash', () => {
     myFunctions.addOrRemoveCash(petShop, -10);
     expect(myFunctions.getTotalCash(petShop)).toBe(990);

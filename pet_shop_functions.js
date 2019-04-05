@@ -1,9 +1,12 @@
 myFunctions = {
   getName: (shopname) => {
-    return shopname.name
+    return shopname.name;
   },
   getTotalCash: (shopname) => {
-    return shopname.admin.totalCash
+    return shopname.admin.totalCash;
+  },
+  addOrRemoveCash: (shopname, cash) => {
+    shopname.admin.totalCash = shopname.admin.totalCash + cash;
   }
   // Write your functions here
 };
