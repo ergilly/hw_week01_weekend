@@ -63,6 +63,10 @@ myFunctions = {
   },
   addPetToCustomer: (customer, newPet) => {
     customer.pets.push(newPet);
+  },
+  // EXTENSIONS
+  customerCanAffordPet: (customer, newPet) => {
+    return customer.cash >= newPet.price;
   }
   // Write your functions here
 };

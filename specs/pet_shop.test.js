@@ -164,13 +164,13 @@ describe('pet shop', () => {
     myFunctions.addPetToCustomer(customers[0], newPet);
     expect(myFunctions.getCustomerPetCount(customers[0])).toBe(1);
   });
-/*
+
   // EXTENSIONS
 
   test('customer CANT afford a pet', () => {;
     expect(myFunctions.customerCanAffordPet(customers[1], newPet)).toBeFalsy();
   });
-
+/*
   test('customer CAN afford a pet', () => {;
     expect(myFunctions.customerCanAffordPet(customers[0], newPet)).toBeTruthy();
   });
