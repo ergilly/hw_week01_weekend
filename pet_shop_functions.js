@@ -6,16 +6,27 @@ myFunctions = {
     return shopname.admin.totalCash;
   },
   addOrRemoveCash: (shopname, cash) => {
-    shopname.admin.totalCash = shopname.admin.totalCash + cash;
+    shopname.admin.totalCash += cash;
   },
   getPetsSold: (shopname) => {
     return shopname.admin.petsSold;
   },
   increasePetsSold: (shopname, number) => {
-    shopname.admin.petsSold = shopname.admin.petsSold + number;
+    shopname.admin.petsSold += number;
   },
   getStockCount: (shopname) => {
     return shopname.pets.length;
+  },
+  getPetsByBreed: (shopname, breed) => {
+    let numOfPets = 0;
+
+    for (let pet of shopname.pets) {
+      if (breed == pet.breed) {
+        numOfPets++;
+        console.log(numOfPets);
+      }
+    }
+    return numOfPets;
   }
   // Write your functions here
 };
