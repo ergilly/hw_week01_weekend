@@ -114,7 +114,7 @@ describe('pet shop', () => {
   test('returns 0 if not pet by breed found', () => {
     expect(myFunctions.getPetsByBreed(petShop, "Dalmation")).toBe(0);
   });
-/*
+
   test('finds a pet by name', () => {
     expect(myFunctions.getPetByName(petShop, "Arthur"))
       .toEqual(
@@ -126,7 +126,7 @@ describe('pet shop', () => {
         }
       );
   });
-
+/*
   test('returns undefined if pet is not found by name', () => {
     expect(myFunctions.getPetByName(petShop, "Fred")).toBeUndefined();
   });

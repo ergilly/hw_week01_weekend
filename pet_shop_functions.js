@@ -27,6 +27,13 @@ myFunctions = {
       }
     }
     return numOfPets;
+  },
+  getPetByName: (shopname, petName) => {
+    for (let pet of shopname.pets) {
+      if (petName == pet.name) {
+        return pet;
+      }
+    }
   }
   // Write your functions here
 };
