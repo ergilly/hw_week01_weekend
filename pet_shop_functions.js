@@ -7,6 +7,9 @@ myFunctions = {
   },
   addOrRemoveCash: (shopname, cash) => {
     shopname.admin.totalCash = shopname.admin.totalCash + cash;
+  },
+  getPetsSold: (shopname) => {
+    return shopname.admin.petsSold
   }
   // Write your functions here
 };
