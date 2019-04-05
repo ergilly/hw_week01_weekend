@@ -13,6 +13,9 @@ myFunctions = {
   },
   increasePetsSold: (shopname, number) => {
     shopname.admin.petsSold = shopname.admin.petsSold + number;
+  },
+  getStockCount: (shopname) => {
+    return shopname.pets.length;
   }
   // Write your functions here
 };

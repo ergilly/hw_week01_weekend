@@ -102,11 +102,11 @@ describe('pet shop', () => {
     myFunctions.increasePetsSold(petShop, 2);
     expect(myFunctions.getPetsSold(petShop)).toBe(2);
   });
-/*
+
   test('can get stock count', () => {
     expect(myFunctions.getStockCount(petShop)).toBe(6);
   });
-
+/*
   test('can get pets by breed', () => {
     expect(myFunctions.getPetsByBreed(petShop, "British Shorthair")).toBe(2);
   });
