@@ -174,7 +174,7 @@ describe('pet shop', () => {
   test('customer CAN afford a pet', () => {;
     expect(myFunctions.customerCanAffordPet(customers[0], newPet)).toBeTruthy();
   });
-/*
+
   // These are 'integration' tests so we want multiple assertions.
   // If one fails the entire test should fail
 
@@ -188,7 +188,7 @@ describe('pet shop', () => {
     expect(myFunctions.getCustomersCash(customer)).toBe(100);
     expect(myFunctions.getTotalCash(petShop)).toBe(1900);
   });
-
+/*
   test('customer cant buy a pet that doesnt exist', () => {
     var customer = customers[0];
     var pet = myFunctions.getPetByName(petShop, "Dave");

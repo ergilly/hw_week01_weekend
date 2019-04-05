@@ -67,6 +67,12 @@ myFunctions = {
   // EXTENSIONS
   customerCanAffordPet: (customer, newPet) => {
     return customer.cash >= newPet.price;
+  },
+  sellPetToCustomer: (shopname, pet, customer) => {
+    myFunctions.addPetToCustomer(customer, pet)
+    myFunctions.increasePetsSold(shopname, 1);
+    myFunctions.removeCustomerCash(customer, pet.price);
+    myFunctions.addOrRemoveCash(shopname, pet.price);
   }
   // Write your functions here
 };
