@@ -170,11 +170,11 @@ describe('pet shop', () => {
   test('customer CANT afford a pet', () => {;
     expect(myFunctions.customerCanAffordPet(customers[1], newPet)).toBeFalsy();
   });
-/*
+
   test('customer CAN afford a pet', () => {;
     expect(myFunctions.customerCanAffordPet(customers[0], newPet)).toBeTruthy();
   });
-
+/*
   // These are 'integration' tests so we want multiple assertions.
   // If one fails the entire test should fail
 
